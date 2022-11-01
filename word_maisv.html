@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="zav">
+  <a href="index.html">Завдання 1</a>
+  <a href="suma.html">Завдання 2</a>
+  <a href="finder_word.html">Завдання 3</a>
+  <a href="word_maisv.html">Завдання 4</a>
+  <a href="negativ_numb.html">Завдання 5</a>
+  <a href="matrix.html">Завдання 6</a>
+</div>
+
+<label> 
+  Розбийте цю стрічку на окремі слова та виведіть масив в консоль.
+</label>
+<div class="radio">
+  <label for="megatext">Введіть текст:</label>
+  <input type="text" id="megatext">
+</div>
+
+<button type="button" class="btn btn-primary btn-lg" onclick="Masive();">Перевірити</button>
+
+<script>
+  function Masive(){
+    let text = document.getElementById('megatext').value;
+
+    let arr = text.split(" ");
+    let k = text.length;
+
+    for (let i=0; i <= k; i++) {
+      console.log(arr[i]);
+    }
+  }
+</script>
+</body>
+</html>

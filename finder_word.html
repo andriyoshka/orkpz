@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="zav">
+  <a href="index.html">Завдання 1</a>
+  <a href="suma.html">Завдання 2</a>
+  <a href="finder_word.html">Завдання 3</a>
+  <a href="word_maisv.html">Завдання 4</a>
+  <a href="negativ_numb.html">Завдання 5</a>
+  <a href="matrix.html">Завдання 6</a>
+</div>
+<label>
+  Скільки разів на тексті зустрічається задане слово?
+</label>
+<div class="radio">
+  <label for="megatext">Введіть текст:</label>
+  <input type="text" id="megatext">
+</div>
+<div class="radio">
+  <label for="word">Введіть слово:</label>
+  <input type="text" id="word">
+</div>
+<button type="button" class="btn btn-primary btn-lg" onclick="Find();">Шукати</button>
+
+<script>
+  function Find(){
+    const word = document.getElementById('word').value;
+    const Text = document.getElementById('megatext').value;
+
+    document.querySelector('.result').innerHTML = "Кількість повторень: "+   (Text.split(' ').filter( (value) => value === word).length);
+  }
+
+</script>
+
+<div class="result"></div>
+
+</body>
+</html>
