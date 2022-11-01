@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="zav">
+  <a href="index.html">Завдання 1</a>
+  <a href="suma.html">Завдання 2</a>
+  <a href="finder_word.html">Завдання 3</a>
+  <a href="word_maisv.html">Завдання 4</a>
+  <a href="negativ_numb.html">Завдання 5</a>
+  <a href="matrix.html">Завдання 6</a>
+</div>
+
+<label> 
+  Знайти суму цифр цілого числа.
+</label>
+<div class="radio suma">
+  <label> 
+    Знайти суму цифр цілого числа.
+  </label>
+  <label for="sum">Введіть число:</label>
+  <input id="sum" type="text">
+</div>
+<button type="button" class="btn btn-primary btn-lg" onclick="GetSum();">Обчислити</button>
+
+<script>
+  function GetSum(){
+    let numbers = (document.getElementById('sum').value).split('');
+    console.log(numbers);
+
+    let sum = 0;
+    numbers.forEach(element => {
+      sum += Number(element);
+    });
+     document.querySelector('.text').innerHTML = "Результат: " + sum;
+  }
+
+
+</script>
+<div class="text"></div>
+</body>
+</html>
