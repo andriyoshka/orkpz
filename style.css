@@ -1,0 +1,57 @@
+body{
+    height: 100vh;
+    font-family: 'Open Sans', 'sans-serif';
+}
+.radio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.form-check{
+    margin-right: 100px;
+}
+.inputs-data{
+    margin-bottom: 35px;
+    margin-left: 600px;
+}
+
+.btn-primary {
+    margin-left: 850px;
+}
+
+.first{
+    margin-top: 350px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 30px;
+    color: #b33c00;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.zav a{
+    margin-left: 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
