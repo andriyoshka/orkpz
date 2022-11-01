@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="zav">
+  <a href="index.html">Завдання 1</a>
+  <a href="suma.html">Завдання 2</a>
+  <a href="finder_word.html">Завдання 3</a>
+  <a href="word_maisv.html">Завдання 4</a>
+  <a href="negativ_numb.html">Завдання 5</a>
+  <a href="matrix.html">Завдання 6</a>
+</div>
+<label> 
+  Знайти номери негативних елементів, якщо таких немає, то повідомити про це.
+</label>
+<div class="radio">
+  
+  <label for="megatext">Введіть число:</label>
+  <input type="text" id="megatext">
+</div>
+<button type="button" class="btn btn-primary btn-lg" onclick="Negativ();">Додати</button>
+<div class="result"></div>
+<script>
+  let n=0;
+  function Negativ(){
+    let num = Number(document.getElementById('megatext').value);
+    document.getElementById('megatext').value = "";
+
+    document.querySelector('.result').innerHTML += num + ", ";
+    for (let i = 0; i < n; i++){
+      if(num < 0){
+        console.clear();
+        console.log(i+2);
+      }
+    }
+    n++;
+  }
+</script>
+</body>
+</html>
